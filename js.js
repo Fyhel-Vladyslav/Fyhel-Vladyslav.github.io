@@ -53,7 +53,7 @@ function addRow() {
         personsArray.set(maxName, personsArray.get(maxName)-maximalDif);
         personsArray.set(minName, personsArray.get(minName)+maximalDif);
         console.log(minName, " == ",maximalDif, " ==> ", maxName);
-        resText.innerHTML += `<p>${minName} == ${maximalDif} ==> ${maxName} </p>`;
+        resText.innerHTML += `<p>${minName} == ${Math.floor(maximalDif)} ==> ${maxName} </p>`;
         }
        // console.log("maximalDif", maximalDif);
     }
